@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const app = express();
 
-app.use(cors({ origin: process.env.FRONTEND_URL }));
+app.use(cors({ origin: 'https://nyaymitra-gold.vercel.app' }));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
